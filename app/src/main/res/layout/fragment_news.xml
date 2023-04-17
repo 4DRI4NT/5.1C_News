@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".NewsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/fragTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:layout_gravity="center"
+        android:gravity="center|top"
+        android:text="Title"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fragDescriptionText"
+        android:layout_width="411dp"
+        android:layout_height="162dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Description"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/fragImageView"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        tools:src="@drawable/image_icon" />
+
+    <TextView
+        android:id="@+id/relatedStoriesText"
+        android:layout_width="165dp"
+        android:layout_height="152dp"
+        android:layout_gravity="center|start"
+        android:gravity="bottom"
+        android:text="RELATED STORIES"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:layout_gravity="bottom|center" />
+
+</FrameLayout>
